@@ -4,14 +4,20 @@ Inspired by [arc42-gradle](https://github.com/p-goetz/arc42-gradle) and [arc42-m
 
 # Purpose
 This paver project template contains pre-filled markdown files to document
-software architecture based on the arc42 template. The markdown files can then be transformed to a HTML site with markdown2, eventually this html is transformed to a PDF file by means of weasyprint.
+software architecture based on the arc42 template. The markdown files can be
+transformed to a single-paged HTML site with markdown2. Eventually, this html is
+transformed to a PDF file by means of weasyprint.
 
-This project allows you to take advantage of version control (e.g. git), the use of the easy, and beloved markdown notation and the use of the markdown editor in your favor. Also, a continuous reporting should be possible by means of build systems.
+This project allows you to take advantage of version control (e.g. git),
+the use of the easy, and beloved markdown notation and the use of the markdown
+editor you prefer. Also, continuous reporting should be possible by means
+of external build systems.
 
 # Notice
 * Not ready for prime time, yet.
-* Template has been adapted, slightly.
+* arc42 template has been adapted, slightly.
 * `###### ` 6th heading is reserved as a little hack for page breaks.
+* template is written in `de`, translation should be no problem, though.
 
 # Usage
 * Mac OS X make sure [homebrew](http://brew.sh) is installed and setup.
@@ -25,4 +31,9 @@ This project allows you to take advantage of version control (e.g. git), the use
 # TODO
 * apply jinja on report.css (e.g. for head/footline).
 * style HTML generation.
-* consider multipage HTML generation.
+* consider multipage HTML generation. Various pages provide a clearer browsing experience, when deployed.
+* automatic TOC creation.
+* V1? provide example.pdf.
+* V1?+ plantuml integration, maybe?
+* V1?+ [nomnom](https://github.com/skanaar/nomnoml) integration, maybe?
+* V1?+ [umpel](http://cruise.eecs.uottawa.ca/umpleonline/download_eclipse_umple_plugin.shtml) integration, maybe?

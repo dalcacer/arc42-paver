@@ -44,8 +44,8 @@ table, th, td {
 }
 tr:nth-child(even) {background-color: #f2f2f2}
 html:after {
-  content: "ENTWURF";
-  font-size: 700%;
+  content: "{{ watermark }}";
+  font-size: 650%;
   color: rgba(0, 0, 0, .1);
   /* alpha, could be even rgba(0,0,0,.05) */
 

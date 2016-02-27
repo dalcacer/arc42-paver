@@ -28,6 +28,7 @@ Form
 Kurze textuelle Beschreibung, eventuell in tabellarischer Use-Case Form.
 In jedem Fall sollte der fachliche Kontext Verweise auf die entsprechenden Anforderungsdokumente enthalten.
 
+
 **Beispiele**
 Kurzbeschreibung der wichtigsten:
 
@@ -38,6 +39,9 @@ Kurzbeschreibung der wichtigsten:
  * Hintergründe
 
 Hier können Sie aus den Anforderungsdokumenten wiederverwenden - halten Sie diese Auszüge so knapp wie möglich und wägen Sie Lesbarkeit und Redundanzfreiheit gegeneinander ab.
+
+`dal:` **Hinweis** Unter Umständen ist es zugunsten des Leseflusses besser die Aufgabenstellung
+etwas generischer zu halten und die Anforderungen in einem extra Kapitel aufzugreifen.
 
 
 ## Qualitätsziele
@@ -55,10 +59,10 @@ Als Qualitätsziele findet man in der Praxis oft:
 * Testbarkeit (testability)
 * Bedienbarkeit (usability)
 
-
 **Motivation**
 Wenn Sie als Architekt nicht wissen, woran Ihre Arbeit gemessen wird, ....
-Form:
+
+**Form:***
 Einfache tabellarische Darstellung, geordnet nach Prioritäten
 Hintergrund:
 Beginnen Sie NIEMALS mit einer Architekturentwicklung, wenn diese Ziele nicht schriftlich festgelegt und von den maßgeblichen Stakeholdern akzeptiert sind.

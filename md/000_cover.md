@@ -12,9 +12,7 @@
 |---|---|
 | Max Mustermann (MM) | [mm@a.com](mm@a.com) |
 | Dieter Mustermann (DM) | [dm@a.com](dm@a.com) |
-
-| Organisation B |
-|---|---|
+| **Organisation B** |
 | Peter Mustermann (PM) | [pm@b.com](pm@b.com) |
 
 
@@ -31,7 +29,6 @@
    Die vorliegende Architekturdokumentation beruht auf dem erprobten arc 42
    Template in der Version 6.0, März 2012. Es steht zur freien Verfügung unter
    [arc42.de](http://www.arc42.de) bereit.
-
 
 **(EN)**
    We acknowledge that this document uses material from the arc 42 architecture  template, http://www.arc42.de. Created by Dr. Peter Hruschka & Dr. Gernot Starke. For additional contributors see arc42.de/about/contributors.html

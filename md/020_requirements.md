@@ -1,9 +1,12 @@
 <a name="Anforderungen">
 # Anforderungen
 </a>
-**Hinzugefügtes Kapitel**
-Von Zeit zu Zeit kann es zweckdienlich sein, die Anforderungen in einem Dokument zu sammeln. Anbei ein Vorschlag zur Strukturierung.
-***Hinweis*** Auch wenn das Dokument nicht zum Erfassen aller Anforderungen gedacht ist, kann es zweckdienlich sein, die **Wichtigsten**, also diejenigen Anforderungen, die die Architektur maßgeblich beeinflussen, zu dokumentieren.
+`dal:` **Hinzugefügtes Kapitel.**
+Auch wenn das Dokument nicht zum Erfassen aller Anforderungen gedacht ist,
+kann es helfen (ähnlich wie in dem Kapitel [1](#einfuehrung)), die
+**wichtigsten Anforderungen** zu dokumentieren.
+Dies kann bei schwierig zu strukturierenden Anforderungen durchaus in einem
+eigenen Kapitel erfolgen.
 
 ## Anwendungsfälle
 
@@ -19,7 +22,7 @@ Die Dokumentation erfolgt zunächst anhand einer grafischen Beschreibung der
 Anwendungsfälle unter Verwendung der UML als Notation. Darüber hinaus erfolgt eine
 textuelle (Kurz-)Beschreibung in tabellarischer Form.
 
-**Anmerkung:** Bei der Priorität gibt es die Werte: hoch, mittel und gering. Die Vergabe wurde
+`Hinweis:` Bei der Priorität gibt es die Werte: hoch, mittel und gering. Die Vergabe wurde
 aus der festgestellten Notwendigkeit der Umsetzung der betrachteten Anforderung
 für die Erreichung der Projektziele abgeleitet.
 
