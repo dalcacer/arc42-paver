@@ -1,0 +1,4 @@
+weasyprint
+markdown2
+paver
+jinja2
