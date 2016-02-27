@@ -10,33 +10,30 @@ from markdown2 import markdown_path
 import locale
 import datetime
 
+
+# customize the following attributes
+# chose between styles, based on
+# https://github.com/kxxoling/markdown2pdf/tree/master/markdown2pdf/themes
+# valid styles = github/mou/ghostwriter/solarized-dark
+STYLECSS = "css/github.css"
+templateVars = { "title" : "project name",
+                 "version" : "V1",
+                 "status" : "{ENTWURF/FREIGEGEBEN/...}",
+                 "date": datetime.date.today(),
+                 "watermark": "ENTWURF/VERTRAULICH",
+                 "locale": "de",
+                 "locale_long": "de_de"
+                 }
+# do not touch this
+PAGECSS = "css/report.css"
+WORKDIR = os.path.dirname(os.path.abspath(__file__))
 HTMLFOLD='html/'
 TMPFOLD='tmp/'
 TMPFILE='tmp/arc.tmp'
 PDFOUT = 'arc.pdf'
 HTMLOUT = 'html/index.html'
-WORKDIR = os.path.dirname(os.path.abspath(__file__))
-# chose between styles, based on
-# https://github.com/kxxoling/markdown2pdf/tree/master/markdown2pdf/themes
-# valid styles = github/mou/ghostwriter/solarized-dark
-STYLECSS = "css/github.css"
-PAGECSS = "css/report.css"
-#for l in locale.locale_alias:
-#    try:
-#        locale.setlocale(locale.LC_TIME, l)
-#    except locale.Error: # the doc says setlocale should throw this on failure
-#        pass
-#    else:
-#        print(l)
-#loc = locale.setlocale(locale.LC_TIME, 'de_de')
-templateVars = { "title" : "project name",
-                 "version" : "V1",
-                 "status" : "{ENTWURF/FREIGEGEBEN/...}",
-                 "date": datetime.date.today(),
-                 "watermark": "ENTWURF/VERAULICH",
-                 "locale": "de",
-                 "locale_long": "de_de"
-                 }
+
+
 def makePDF():
     html = markdown_path(TMPFILE, extras=["metadata", "tables", "footnotes"])
     relhtml = HTML(string=html, base_url=WORKDIR+"/"+HTMLFOLD)

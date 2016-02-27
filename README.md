@@ -23,6 +23,6 @@ This project allows you to take advantage of version control (e.g. git), the use
 * `paver docs`
 
 # TODO
-* Style HTML generation.
-* apply jinja on report.css (e.g. for head/foodline).
-*
+* apply jinja on report.css (e.g. for head/footline).
+* style HTML generation.
+* consider multipage HTML generation.
