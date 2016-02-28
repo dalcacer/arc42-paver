@@ -1,32 +1,53 @@
 # Einführung und Ziele
-`(engl.: Introduction and Goals)`
+(engl.: Introduction and Goals)
 
-`Kurzinfo` Aufgabenstellung, Qualitätsziele, eine Kurzfassung der architekturrelevanten Anforderungen (insb. die nichtfunktionalen), Stakeholder.
-
-`Langinfo` Als Einführung in das Architekturdokument gehören hierher die treibenden Kräfte, die Software-Architekten bei Ihren Entscheidungen berücksichtigen müssen: Einerseits die Erfüllung bestimmter fachlicher Aufgabenstellungen der Stakeholder, darüber hinaus aber die Erfüllung oder Einhaltung der vorgegebenen Randbedingungen (required constraints) unter Berücksichtigung der Architekturziele.
+Als Einführung in das Architekturdokument gehören hierher die treibenden Kräfte, die Software-Architekten bei ihren Entscheidungen berücksichtigen müssen: Einerseits die Erfüllung bestimmter fachlicher Aufgabenstellungen der Stakeholder, darüber hinaus aber die Erfüllung oder Einhaltung der vorgegebenen Randbedingungen (required constraints) unter Berücksichtigung der Architekturziele.
 
 ## Aufgabenstellung
-`(engl.: Requirements Overview)` Kurzbeschreibung der fachlichen Aufgabenstellung, Extrakt (oder Abstract) der Anforderungsdokumente. Verweis auf ausführliche Anforderungsdokumente (mit Versionsbezeichnungen und Ablageorten).
+(engl.: Requirements Overview)
 
-**Inhalt** Eine kompakte Zusammenfassung des fachlichen Umfelds des Systems. Beantwortet (etwa) folgende Fragen: Was geschieht im Umfeld des Systems? Warum soll es das System geben? Was macht das System wertvoll oder wichtig? Welche Probleme löst das System?
+Kurzbeschreibung der fachlichen Aufgabenstellung, Extrakt (oder Abstract) der Anforderungsdokumente. Verweis auf ausführliche Anforderungsdokumente (mit Versionsbezeichnungen und Ablageorten).
 
-**Motivation** Aus Sicht der späteren Nutzer ist die Unterstützung einer fachlichen Aufgaben der eigentliche Beweggrund, ein neues (oder modifiziertes) System zu schaffen. Obwohl die Qualität der Architektur oft eher an der Erfüllung von nicht-funktionalen Anforderungen hängt, darf diese wesentliche Architekturtreiber nicht vernachlässigt werden. Form Kurze textuelle Beschreibung, eventuell in tabellarischer Use-Case Form. In jedem Fall sollte der fachliche Kontext Verweise auf die entsprechenden Anforderungsdokumente enthalten.
+**Inhalt.**
 
-**Beispiele** Kurzbeschreibung der wichtigsten:
+Eine kompakte Zusammenfassung des fachlichen Umfelds des Systems. Beantwortet (etwa) folgende Fragen:
+- Was geschieht im Umfeld des Systems?
+- Warum soll es das System geben? Was macht das System wertvoll oder
+
+  wichtig? Welche Probleme löst das System?
+
+**Motivation.**
+
+Aus Sicht der späteren Nutzer ist die Unterstützung einer fachlichen Aufgaben der eigentliche Beweggrund, ein neues (oder modifiziertes) System zu schaffen. Obwohl die Qualität der Architektur oft eher an der Erfüllung von nicht-funktionalen Anforderungen hängt, darf diese wesentliche Architekturtreiber nicht vernachlässigt werden.
+
+**Form.**
+
+Kurze textuelle Beschreibung, eventuell in tabellarischer Use-Case Form. In jedem Fall sollte der fachliche Kontext Verweise auf die entsprechenden Anforderungsdokumente enthalten.
+
+**Beispiele.**
+
+Kurzbeschreibung der wichtigsten:
 - Geschäftsprozessen,
 - funktionalen Anforderungen,
-- nichtfunktionalen Anforderungen und andere Randbedingungen (die wesentlichen müssen bereits als Architekturziele formuliert sein oder tauchen als Randbedingungen auf) oder
+- nichtfunktionalen Anforderungen und andere Randbedingungen (die
+
+  wesentlichen müssen bereits als Architekturziele formuliert sein
+
+  oder tauchen als Randbedingungen auf) oder
+
 - Mengengerüste.
 - Hintergründe
 
 Hier können Sie aus den Anforderungsdokumenten wiederverwenden - halten Sie diese Auszüge so knapp wie möglich und wägen Sie Lesbarkeit und Redundanzfreiheit gegeneinander ab.
 
-`dal:` **Hinweis** Unter Umständen ist es zugunsten des Leseflusses besser die Aufgabenstellung etwas generischer zu halten und die Anforderungen in einem extra Kapitel aufzugreifen.
-
 ## Qualitätsziele
-`(engl.: Quality Goals)`
+(engl.: Quality Goals)
 
-**Inhalt** Die Hitparade (Top-3 bis Top-5) der Qualitätsziele für die Architektur und/oder Randbedingungen, deren Erfüllung oder Einhaltung den maßgeblichen Stakeholdern besonders wichtig sind. Gemeint sind hier wirklich Qualitätsziele, die nicht unbedingt mit den Zielen des Projekts übereinstimmen. Beachten Sie den Unterschied. Als Qualitätsziele findet man in der Praxis oft:
+**Inhalt.**
+
+Die Hitparade (Top-3 bis Top-5) der Qualitätsziele für die Architektur und/oder Randbedingungen, deren Erfüllung oder Einhaltung den maßgeblichen Stakeholdern besonders wichtig sind. Gemeint sind hier wirklich Qualitätsziele, die nicht unbedingt mit den Zielen des Projekts übereinstimmen. Beachten Sie den Unterschied.
+
+Als Qualitätsziele findet man in der Praxis oft:
 - Verfügbarkeit (availability)
 - Änderbarkeit (modifiability)
 - Performanz (performance)
@@ -34,24 +55,38 @@ Hier können Sie aus den Anforderungsdokumenten wiederverwenden - halten Sie die
 - Testbarkeit (testability)
 - Bedienbarkeit (usability)
 
-**Motivation** Wenn Sie als Architekt nicht wissen, woran Ihre Arbeit gemessen wird, ....
+**Motivation.**
 
-**Form** Einfache tabellarische Darstellung, geordnet nach Prioritäten
+Wenn Sie als Architekt nicht wissen, woran Ihre Arbeit gemessen wird, ....
 
-**Hintergrund** Beginnen Sie NIEMALS mit einer Architekturentwicklung, wenn diese Ziele nicht schriftlich festgelegt und von den maßgeblichen Stakeholdern akzeptiert sind.
+**Form.**
 
-```
-Wir haben oft genug Projekte ohne definierte Qualitätsziele durchlitten. Wir leiden nicht gerne, daher sind wir inzwischen ziemlich überzeugt, dass sich diese paar Stunden lohnen. Sollte es in Ihrem Projekt Wochen oder Monate dauern, dann denken Sie besser rechtzeitig über berufliche Veränderungen nach :-) PH & GS.
-```
+Einfache tabellarische Darstellung, geordnet nach Prioritäten
 
-**Quellen** Im DIN/ISO 9126 Standard finden Sie eine umfangreiche Sammlung möglicher Qualitätsziele. Für alle, die es nicht so genau wissen wollen: ein lesbarer Auszug davon ist im Buch "Agile Software- Entwicklung für Embedded Real-Time Systems mit der UML" (Hruschka, Rupp, Carl- Hanser-Verlag, 2002 auf Seite 9 zu finden. PH
+**Hintergrund.**
+
+Beginnen Sie NIEMALS mit einer Architekturentwicklung, wenn diese Ziele nicht schriftlich festgelegt und von den maßgeblichen Stakeholdern akzeptiert sind. Wir haben oft genug Projekte ohne definierte Qualitätsziele durchlitten. Wir leiden nicht gerne, daher sind wir inzwischen ziemlich überzeugt, dass sich diese paar Stunden lohnen. Sollte es in Ihrem Projekt Wochen oder Monate dauern, dann denken Sie besser rechtzeitig über berufliche Veränderungen nach :-) PH & GS.
+
+**Quellen.**
+
+Im DIN/ISO 9126 Standard finden Sie eine umfangreiche Sammlung möglicher Qualitätsziele. Für alle, die es nicht so genau wissen wollen: ein lesbarer Auszug davon ist im Buch [HruschkaRupp] "Agile Software- Entwicklung für Embedded Real-Time Systems mit der UML" (Hruschka, Rupp, Carl- Hanser-Verlag, 2002 auf Seite 9 zu finden.
 
 ## Stakeholder
-**Inhalt** Eine Liste oder Tabelle der wichtigsten Personen oder Organisationen, die von der Architektur betroffen sind oder zur Gestaltung beitragen können.
+**Inhalt.**
 
-**Motivation** Sie sollten die Projektbeteiligten und -betroffenen kennen, sonst erleben Sie später im Entwicklungsprozess Überraschungen. Form Einfache Tabelle mit Rollennamen, Personennamen, deren Kenntnisse, die für die Architektur relevant sind, deren Verfügbarkeit, etc.
+Eine Liste oder Tabelle der wichtigsten Personen oder Organisationen, die von der Architektur betroffen sind oder zur Gestaltung beitragen können.
 
-**Beispiele** Die folgende Tabelle führt Stakeholder auf, die in Projekten relevant sein könn(t)en. Große Teile davon hat Uwe Friedrichsen zusammengetragen
+**Motivation.**
+
+Sie sollten die Projektbeteiligten und -betroffenen kennen, sonst erleben Sie später im Entwicklungsprozess Überraschungen.
+
+**Form.**
+
+Einfache Tabelle mit Rollennamen, Personennamen, deren Kenntnisse, die für die Architektur relevant sind, deren Verfügbarkeit, etc.
+
+**Beispiele.**
+
+Die folgende Tabelle führt Stakeholder auf, die in Projekten relevant sein könn(t)en. Große Teile davon hat Uwe Friedrichsen zusammengetragen
 
 Stakeholder                                        | Beschreibung
 -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -94,6 +129,3 @@ Die folgende Tabelle zeigt Ihre konkreten Stakeholder für das System sowie dere
 Rolle | Beschreibung | Ziel/Intention | Kontakt | Bemerkung
 ----- | ------------ | -------------- | ------- | ---------
 ...   | ...          | ...            | ...     | ...
-
-## Vision
-`dal:` **Hinzugefügtes Kapitel** Von Zeit zu Zeit ist es auch zweckdienlich eine gemeinsame Vision, ähnlich der Aufgabenstellung zu formulieren. Hier sollte festgehalten werden, was mit der Einführung der Software/Softwarekomponente bezweckt wird.

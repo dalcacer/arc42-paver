@@ -15,7 +15,7 @@ of external build systems.
 
 # Notice
 * Not ready for prime time, yet.
-* arc42 template has been adapted, slightly.
+* ~~arc42 template has been adapted, slightly.~~
 * `###### ` 6th heading is reserved as a little hack for page breaks.
 * ~~template is written in `de`, translation should be no problem, though.~~
 * template is available at [arc42.github.io](http://arc42.github.io)
@@ -37,7 +37,7 @@ of external build systems.
 * ~~apply jinja on report.css (e.g. for head/footline).~~
 * style HTML generation.
 * consider multipage HTML generation. Various pages provide a clearer browsing experience, when deployed.
-* automatic TOC creation, or at least the choice switch.
+* automatic TOC creation, or at least there should be a choice.
 * V1? provide example.pdf.
 * V1?+ plantuml integration, maybe?
 * V1?+ [nomnom](https://github.com/skanaar/nomnoml) integration, maybe?
