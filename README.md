@@ -30,10 +30,10 @@ of external build systems.
 
 # Known Issues
 * markdown formatting stuff. (e.g. quotes/code in PDF, multiline table entries, ...). This needs to be sort out in progress, contribution is very welcome.
-* internal links to `h1` elements have an offset of one page.
+* ~~internal links to `h1` elements have an offset of one page.~~
 
 # TODO
-* ~~apply jinja on report.css (e.g. for head/footline).~
+* ~~apply jinja on report.css (e.g. for head/footline).~~
 * style HTML generation.
 * consider multipage HTML generation. Various pages provide a clearer browsing experience, when deployed.
 * automatic TOC creation, or at least the choice switch.
