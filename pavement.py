@@ -10,21 +10,23 @@ from markdown2 import markdown_path
 import locale
 import datetime
 import re
-
+import time
 
 # customize the following attributes
 # chose between styles, based on
 # https://github.com/kxxoling/markdown2pdf/tree/master/markdown2pdf/themes
 # valid styles = github/mou/ghostwriter/solarized-dark
 STYLECSS = "css/github.css"
+locale.setlocale(locale.LC_TIME, "de_DE")
 templateVars = { "title" : "project name",
                  "version" : "V1",
                  "status" : "{ENTWURF/FREIGEGEBEN/...}",
-                 "date": datetime.date.today(),
+                 "date":  time.strftime("%a, %d %b %Y"),
+                 #datetime.date.today(),
                  "watermark": "ENTWURF/VERTRAULICH",
                  "headline": "Architekturdokumentation project name V1",
                  "locale": "de",
-                 "locale_long": "de_de"
+                 "locale_long": "de_DE"
                  }
 # do not touch this
 PAGECSS = "css/report.css"
