@@ -1,6 +1,5 @@
-<a name="Einfuehrung">
 # Einführung und Ziele
-</a>
+
 `(engl.: Introduction and Goals)`
 
 `Kurzinfo`
@@ -47,7 +46,7 @@ etwas generischer zu halten und die Anforderungen in einem extra Kapitel aufzugr
 ## Qualitätsziele
 `(engl.: Quality Goals)`
 
-**Inhalt:**
+**Inhalt**
 Die Hitparade (Top-3 bis Top-5) der Qualitätsziele für die Architektur und/oder Randbedingungen, deren Erfüllung oder Einhaltung den maßgeblichen Stakeholdern besonders wichtig sind.
 Gemeint sind hier wirklich Qualitätsziele, die nicht unbedingt mit den Zielen des Projekts übereinstimmen. Beachten Sie den Unterschied.
 Als Qualitätsziele findet man in der Praxis oft:
@@ -62,12 +61,14 @@ Als Qualitätsziele findet man in der Praxis oft:
 **Motivation**
 Wenn Sie als Architekt nicht wissen, woran Ihre Arbeit gemessen wird, ....
 
-**Form:***
+**Form**
 Einfache tabellarische Darstellung, geordnet nach Prioritäten
 Hintergrund:
 Beginnen Sie NIEMALS mit einer Architekturentwicklung, wenn diese Ziele nicht schriftlich festgelegt und von den maßgeblichen Stakeholdern akzeptiert sind.
 
-    Wir haben oft genug Projekte ohne definierte Qualitätsziele durchlitten. Wir leiden nicht gerne, daher sind wir inzwischen ziemlich überzeugt, dass sich diese paar Stunden lohnen. Sollte es in Ihrem Projekt Wochen oder Monate dauern, dann denken Sie besser rechtzeitig über berufliche Veränderungen nach :-) PH & GS.
+```
+Wir haben oft genug Projekte ohne definierte Qualitätsziele durchlitten. Wir leiden nicht gerne, daher sind wir inzwischen ziemlich überzeugt, dass sich diese paar Stunden lohnen. Sollte es in Ihrem Projekt Wochen oder Monate dauern, dann denken Sie besser rechtzeitig über berufliche Veränderungen nach :-) PH & GS.
+```
 
 **Quellen**
 Im DIN/ISO 9126 Standard finden Sie eine umfangreiche Sammlung möglicher Qualitätsziele.
@@ -77,10 +78,10 @@ PH
 
 ## Stakeholder
 
-**Inhalt:**
+**Inhalt**
 Eine Liste oder Tabelle der wichtigsten Personen oder Organisationen, die von der Architektur betroffen sind oder zur Gestaltung beitragen können.
 
-**Motivation:**
+**Motivation**
 Sie sollten die Projektbeteiligten und -betroffenen kennen, sonst erleben Sie später im Entwicklungsprozess Überraschungen.
 Form
 Einfache Tabelle mit Rollennamen, Personennamen, deren Kenntnisse, die für die Architektur relevant sind, deren Verfügbarkeit, etc.

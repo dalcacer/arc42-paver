@@ -28,14 +28,19 @@ of external build systems.
 * `pip install -r requirements.txt`
 * `paver docs`
 
+# Known Issues
+* markdown formatting stuff. (e.g. quotes/code in PDF, multiline table entries, ...). This needs to be sort out in progress, contribution is very welcome.
+* internal links to `h1` elements have an offset of one page.
+
 # TODO
-* apply jinja on report.css (e.g. for head/footline).
+* ~~apply jinja on report.css (e.g. for head/footline).~
 * style HTML generation.
 * consider multipage HTML generation. Various pages provide a clearer browsing experience, when deployed.
-* automatic TOC creation.
+* automatic TOC creation, or at least the choice switch.
 * V1? provide example.pdf.
 * V1?+ plantuml integration, maybe?
 * V1?+ [nomnom](https://github.com/skanaar/nomnoml) integration, maybe?
 * V1?+ [umpel](http://cruise.eecs.uottawa.ca/umpleonline/download_eclipse_umple_plugin.shtml) integration, maybe?
 * V1?+ logo(s) on cover page. Everyone loves logos!
 * V1?+ render git log as history.
+* V1?+ better traceability, e.g. by means of jinja or link_patterns.

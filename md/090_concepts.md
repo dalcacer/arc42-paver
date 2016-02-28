@@ -1,6 +1,5 @@
-<a name="Konzepte">
 # Konzepte
-</a>
+
 Wiederkehrende Muster und Strukturen.
 Fachliche Strukturen.
 Querschnittliche, übergreifende Konzepte, Nutzungs- oder Einsatzanleitungen für Technologien. Oftmals projekt-/systemübergreifend verwendbar!

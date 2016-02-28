@@ -3,10 +3,9 @@
 </a>
 `dal:` **Hinzugefügtes Kapitel.**
 Auch wenn das Dokument nicht zum Erfassen aller Anforderungen gedacht ist,
-kann es helfen (ähnlich wie in dem Kapitel [1](#einfuehrung)), die
-**wichtigsten Anforderungen** zu dokumentieren.
-Dies kann bei schwierig zu strukturierenden Anforderungen durchaus in einem
-eigenen Kapitel erfolgen.
+kann es helfen (ähnlich wie in dem Kapitel [1](#Einfuehrung)), die
+**wichtigsten Anforderungen** zu dokumentieren. Dies kann bei schwierig zu strukturierenden Anforderungen durchaus in einem eigenen Kapitel erfolgen.
+Es bietet sich dann an auf Kapitel [3](#Randbedingungen) zu verzichten.
 
 ## Anwendungsfälle
 
@@ -35,10 +34,10 @@ für die Erreichung der Projektziele abgeleitet.
 | **Priorität** | {Hoch/Mittel/Gering} |
 | **Anmerkungen** |  |
 | **Offene Punkte** |  |
-| **Wird verfeinert um** | |
-|  |  Nummer - Name |
-|  |  Nummer - Name |
-|  |  Nummer - Name |
+| **Wird verfeinert um** | ...|
+| ... |  Nummer - Name |
+| ... |  Nummer - Name |
+| ... |  Nummer - Name |
 
 ## Funktionale Anforderungen
 
@@ -83,11 +82,13 @@ funktionaler Anforderungen sollen in einer der folgenden Iterationen erstellt we
 
 | Hardware-Vorgaben|
 |---|---|
-| | |
+| **Name** | **Beschreibung** |
+| ... | ... |
 
 | Software-Vorgaben|
 |---|---|
-| | |
+| **Name** | **Beschreibung** |
+| ... | ... |
 
 ### Rechtliche Rahmenanforderungen
 

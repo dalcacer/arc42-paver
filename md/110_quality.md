@@ -1,6 +1,5 @@
-<a name="Qualitaetsszenarien">
 # Qualitätsszenarien
-</a>
+
 `Kurzinfo` Qualitätsbaum sowie dessen Konkretisierung durch Szenarien
 
 `Langinfo` Dieses Kapitel fasst alles zusammen, was Sie zur systematischen

@@ -1,6 +1,5 @@
-<a name="Kontextabgrenzung">
 # Kontextabgrenzung
-</a>
+
 In welchem fachlichen und/oder technischen Umfeld arbeitet das System?
 
 ## Fachlicher Kontext

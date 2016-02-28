@@ -1,6 +1,4 @@
-<a name="Glossar">
 # Glossar
-</a>
 
 **Inhalt**
 Die wichtigsten Begriffe der Software-Architektur in alphabetischer Reihenfolge
