@@ -20,7 +20,7 @@ a h1, h2, h3, h4, h5 {
 }
 /*headline*/
 @page {
-  @top-center { content: "Edit reports.css to alter this text." }
+  @top-center { content: "{{ headline }}" }
 }
 
 table, figure {

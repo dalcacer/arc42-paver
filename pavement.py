@@ -9,6 +9,7 @@ from weasyprint import HTML
 from markdown2 import markdown_path
 import locale
 import datetime
+import re
 
 
 # customize the following attributes
@@ -21,6 +22,7 @@ templateVars = { "title" : "project name",
                  "status" : "{ENTWURF/FREIGEGEBEN/...}",
                  "date": datetime.date.today(),
                  "watermark": "ENTWURF/VERTRAULICH",
+                 "headline": "Architekturdokumentation project name V1",
                  "locale": "de",
                  "locale_long": "de_de"
                  }
@@ -33,10 +35,13 @@ TMPFOLD='tmp/'
 TMPFILE='tmp/arc.tmp'
 PDFOUT = 'arc.pdf'
 HTMLOUT = 'html/index.html'
-
+MDFOLD = "md/"
+PATTERNS=[(re.compile(r'((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+(:[0-9]+)?|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)'),r'\1')]
+#https://github.com/trentm/python-markdown2/wiki/Extras
+MDEXTRAS = ["metadata", "tables", "footnotes", "fenced-code-blocks", 'cuddled-lists', 'header-ids', 'link-patterns']
 
 def makePDF():
-    html = markdown_path(TMPFILE, extras=["metadata", "tables", "footnotes"])
+    html = markdown_path(TMPFILE, extras=MDEXTRAS, link_patterns=PATTERNS)
     relhtml = HTML(string=html, base_url=WORKDIR+"/"+HTMLFOLD)
     HTML(string=html, base_url=WORKDIR+"/"+TMPFOLD).write_pdf(PDFOUT, stylesheets=[TMPCSS, STYLECSS])
 
@@ -45,7 +50,7 @@ def makeHTML():
     with open("res/htmlhead.tmpl") as infile:
         for line in infile:
             html+=line
-    body = markdown_path(TMPFILE, extras=["metadata", "tables", "footnotes"])
+    body = markdown_path(TMPFILE, extras=MDEXTRAS, link_patterns=PATTERNS)
     html += body
     with open("res/htmlfooter.tmpl") as infile:
         for line in infile:
@@ -99,31 +104,35 @@ def docs():
     if os.path.isfile(TMPFILE):
         clean()
 
-    allfiles = listdir("md/")
+    ## find all md files within folder md
+    allfiles = listdir(MDFOLD)
     filenames = list()
     for f in allfiles:
-        afile = "md/"+ f
+        afile = MDFOLD + f
         if isfile(afile):
             extension = os.path.splitext(afile)[1][1:]
             if extension == "md":
                 filenames.append(afile)
     filenames.sort()
 
-    shutil.copytree('md/images', TMPFOLD+"images")
+    # copy temporary ressources to tmp
+    shutil.copytree(MDFOLD+'images', TMPFOLD+"images")
     shutil.copy(PAGECSS, TMPFOLD+"/report.css")
+    jinja(TMPCSS)
 
-    shutil.copytree('md/images', HTMLFOLD+"images")
+    # copy ressources to html
+    shutil.copytree(MDFOLD+'/images', HTMLFOLD+"images")
     shutil.copy(STYLECSS, HTMLFOLD+"/style.css")
     shutil.copy(PAGECSS, HTMLFOLD+"/report.css")
-    jinja(TMPCSS)
     jinja(HTMLFOLD+"/report.css")
-    #merge md documents to one
+
+    # merge all md documents to one
     with open(TMPFILE, 'w') as outfile:
         for fname in filenames:
             with open(fname) as infile:
                 for line in infile:
                     outfile.write(line)
-
     jinja(TMPFILE)
+
     makePDF()
     makeHTML()
