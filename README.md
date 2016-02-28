@@ -37,3 +37,5 @@ of external build systems.
 * V1?+ plantuml integration, maybe?
 * V1?+ [nomnom](https://github.com/skanaar/nomnoml) integration, maybe?
 * V1?+ [umpel](http://cruise.eecs.uottawa.ca/umpleonline/download_eclipse_umple_plugin.shtml) integration, maybe?
+* V1?+ logo(s) on cover page. Everyone loves logos!
+* V1?+ render git log as history.

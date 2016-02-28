@@ -27,6 +27,7 @@ templateVars = { "title" : "project name",
 # do not touch this
 PAGECSS = "css/report.css"
 WORKDIR = os.path.dirname(os.path.abspath(__file__))
+TMPCSS = "tmp/report.css"
 HTMLFOLD='html/'
 TMPFOLD='tmp/'
 TMPFILE='tmp/arc.tmp'
@@ -37,7 +38,7 @@ HTMLOUT = 'html/index.html'
 def makePDF():
     html = markdown_path(TMPFILE, extras=["metadata", "tables", "footnotes"])
     relhtml = HTML(string=html, base_url=WORKDIR+"/"+HTMLFOLD)
-    HTML(string=html, base_url=WORKDIR+"/"+TMPFOLD).write_pdf(PDFOUT, stylesheets=[PAGECSS, STYLECSS])
+    HTML(string=html, base_url=WORKDIR+"/"+TMPFOLD).write_pdf(PDFOUT, stylesheets=[TMPCSS, STYLECSS])
 
 def makeHTML():
     html =""
@@ -109,10 +110,14 @@ def docs():
     filenames.sort()
 
     shutil.copytree('md/images', TMPFOLD+"images")
+    shutil.copy(PAGECSS, TMPFOLD+"/report.css")
+
     shutil.copytree('md/images', HTMLFOLD+"images")
     shutil.copy(STYLECSS, HTMLFOLD+"/style.css")
     shutil.copy(PAGECSS, HTMLFOLD+"/report.css")
-    #merge documents to one
+    jinja(TMPCSS)
+    jinja(HTMLFOLD+"/report.css")
+    #merge md documents to one
     with open(TMPFILE, 'w') as outfile:
         for fname in filenames:
             with open(fname) as infile:
