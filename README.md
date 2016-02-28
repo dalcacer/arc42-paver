@@ -1,6 +1,6 @@
 # arc42-paver
 Paver project template for architecture documentation based on the arc42 template (s. [arc42.de](http://arc42.de)).
-Inspired by [arc42-gradle](https://github.com/p-goetz/arc42-gradle) and [arc42-maven](https://github.com/p-goetz/arc42-maven).
+Inspired by [arc42-gradle](https://github.com/p-goetz/arc42-gradle),  [arc42-maven](https://github.com/p-goetz/arc42-maven) and [template-arc42](https://github.com/falkoschumann/template-arc42).
 
 # Purpose
 This paver project template contains pre-filled markdown files to document
