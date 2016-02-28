@@ -17,7 +17,8 @@ of external build systems.
 * Not ready for prime time, yet.
 * arc42 template has been adapted, slightly.
 * `###### ` 6th heading is reserved as a little hack for page breaks.
-* template is written in `de`, translation should be no problem, though.
+* ~~template is written in `de`, translation should be no problem, though.~~
+* template is available at [arc42.github.io](http://arc42.github.io)
 
 # Usage
 * Mac OS X make sure [homebrew](http://brew.sh) is installed and setup.
